@@ -1,0 +1,16 @@
+extends layout
+
+block content
+  h1= title
+  form(name='upfrm',method='POST',enctype='multipart/form-data')
+    button(id='upload-html-btn',type='button',class='btn btn-primary') Upload Html
+    p
+    button(id='upload-image-btn',type='button',class='btn btn-primary') Upload Images
+    p
+    button(id='upload-audio-btn',type='button',class='btn btn-primary') Upload Audios
+    p
+    button(id='upload-video-btn',type='button',class='btn btn-primary') Upload Videos
+    p
+    
+  div(class='file-list')
+  div(class='file-info')
